@@ -1,0 +1,65 @@
+@import "estilos";
+@import "colores";
+
+
+    /*OPERACIONES*/
+
+    $iframe: 80%; 
+
+    .iframe {
+        width: $iframe;
+        height: $iframe / 2;
+    }
+
+
+    /*MIXINS*/
+
+    @mixin tamanio ($ancho, $alto) {
+        width: $ancho;
+        height: $alto;
+    }
+
+    .foto-nove {
+        @include tamanio (350px, 200px)
+    }
+
+    /*BUCLES*/
+
+    @for $t from 1 through 6 {
+        .foto-#{$t} {
+            border: solid 2px $colorSiete;
+            border-radius: 2%;
+        }
+        
+    }
+
+
+
+    /*ANIMACIONES*/
+
+    .maxi-img{
+        transition: width 0,5s, height 0,5s ;
+        }
+    
+    .maxi-img:hover{
+        width: 40rem;
+        height: 20rem;
+        z-index: 99;
+        }
+    
+    .animacion {
+        animation-name: efecto;
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+        animation-delay: 2s;
+        }
+
+        @keyframes efecto{
+            0%{
+                transform: rotate(0deg);
+            }
+            
+            100%{
+                transform: rotate(360deg)
+            }
+            }

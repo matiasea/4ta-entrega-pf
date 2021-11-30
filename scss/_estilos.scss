@@ -1,0 +1,100 @@
+/*ESTILOS*/ 
+@import "colores";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    color: $colorUno; 
+    }
+
+main{
+    padding: 50px;
+    }
+
+
+
+footer{
+        width: 100vh;
+        font-size: 13px;
+        background-color: $colorSiete;
+        color: $colorOcho;
+        text-align: center;
+        line-height: 1,5;
+        padding-top: 20px;
+    }
+
+h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 60px;
+    color: $colorSiete;
+    text-align: center;
+    padding: 20px;
+}
+
+.h1{
+    font-weight: bold;
+    color: $colorSiete;
+    padding: 10px;
+    padding-top: 60px;
+    font-size: 50px
+}
+h2{
+    color: $colorDos;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.h2h1{
+    color: $colorDos;
+    font-weight: bold;
+    padding: 15px;
+    font-size: 50px
+}
+
+
+
+h3 {
+    color:  $colorSiete;
+    font-weight: bold;
+    text-align: center;
+}
+
+.h3 {
+    color: $colorSiete;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.h3h3{
+    color: $colorSeis;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+}
+
+.logo{
+    padding: 30px;
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 0px;
+    z-index: 99;
+    }
+
+
+.f1{
+    font-size: 15px;
+    color: $colorCinco;
+    }
+
+
+.aniversario {
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 135px;
+    z-index: 999;
+    }
